@@ -98,6 +98,7 @@ h1 {
     letter-spacing: 0.03em;
     color: #333333;
     padding-top: 86px;
+    padding-bottom: 8px;
     width: 320px;
     margin: auto;
 }
@@ -109,7 +110,56 @@ h6 {
     text-align: center;
     color: #4F4F4F;
     width: 320px;
-    padding-top: 28px;
+    padding-top: 20px;
+    padding-bottom: 5px;
     margin: auto;
     letter-spacing: 0.005em;
+}
+
+.download {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 323px;
+    margin: auto;
+}
+
+
+
+
+/**** experience ****/ 
+
+
+
+#experience {
+    height: 1200px;
+    padding-top: 18px;
+}
+
+.blue {
+    font-family: 'Lato bold';
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #00ADEE;
+    padding-top: 36px;
+}
+
+h2 {
+    font-family: 'Lato bold';
+    font-size: 28px;
+    line-height: 37px;
+    text-align: center;
+    color: #333333;
+    padding-top: 27px;
+}
+
+
+.match {
+    height: 360px;
+    background: url(../img/match.png), linear-gradient(180deg, white
+     5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5);
+    background-repeat: no-repeat;
+    background-blend-mode: normal;
+    position: relative;
 }
