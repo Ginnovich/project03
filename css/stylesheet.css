@@ -63,6 +63,8 @@ body {
     
 }
 
+/***** разобраться с падингами и марджингами *******/
+
 
 /**** header ****/ 
 
@@ -132,7 +134,7 @@ h6 {
 
 
 #experience {
-    height: 1200px;
+    height: 863px;
     padding-top: 18px;
 }
 
@@ -154,12 +156,136 @@ h2 {
     padding-top: 27px;
 }
 
+.blue-a {
+    font-family: 'Lato bold';
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    padding: 18px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #00ADEE;
+}
 
 .match {
     height: 360px;
     background: url(../img/match.png), linear-gradient(180deg, white
      5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5);
     background-repeat: no-repeat;
-    background-blend-mode: normal;
-    position: relative;
+    background-blend-mode: color;
+    background-size: cover;
+    padding-top: 35px;
+}
+
+.match img:last-child {
+    margin-top: -73px;
+    float: right;
+    margin-right: 25px;
+}
+
+.match img:first-child {
+    padding-top: 23px;
+}
+
+
+
+/**** start ****/
+
+
+
+#start {
+    height: 1024px;
+}
+
+#start h6 {
+    padding-top: 28px;
+}
+
+#start .blue-a {
+    padding-top: 24px;
+}
+
+
+
+/**** features ****/
+
+
+
+#features {
+    height: 1775px;
+    background: #FAFAFA;
+    margin-top: -11px;
+}
+
+#features h2 {
+    padding-left: 21px;
+    padding-right: 21px;
+}
+
+.descriptions {
+    padding-top: 50px;
+}
+
+
+/**** features > div ****/
+
+
+/*** несоответсвия отступов 
+в макете приведены к общим значениям ***/
+
+.descriptions > div {
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -10px;
+    background-repeat: no-repeat;
+}
+
+.video {
+    background-image: url(../img/features_div/video.svg);
+}
+
+.Notifications {
+    background-image: url(../img/features_div/notifications.svg);
+}
+
+.HD {
+    background-image: url(../img/features_div/hd.svg);
+}
+
+.flag {
+    background-image: url(../img/features_div/flag.svg);
+}
+
+.style {
+    background-image: url(../img/features_div/style.svg);
+}
+
+.poll {
+    background-image: url(../img/features_div/poll.svg);
+}
+
+.Vidiprinter {
+    background-image: url(../img/features_div/Vidiprinter.svg);
+}
+
+.people {
+    background-image: url(../img/features_div/people.svg);
+}
+
+.status {
+    background-image: url(../img/features_div/status.svg);
+}
+
+
+
+/**** twits ****/
+
+
+
+#twits {
+    height: 402px;
 }
