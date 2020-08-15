@@ -288,4 +288,48 @@ a {
 
 #twits {
     height: 402px;
+    padding-top: 9px;
+}
+
+.commentary {
+    height: 161px;
+    border: 1px solid #828282;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 38px 34px;
+    padding: 15px 13px 15px 17px;
+}
+
+.name {
+    height: 30px;
+    display: flex;
+}
+
+.Users {
+    background-image: url(../img/users.png);
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    height: 30px;
+}
+
+.Users > div {
+    font-family: 'Lato bold';
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: auto;
+    width: 105px;
+    padding-top: 6px;
+}
+
+.twitter {
+    background-image: url(../img/twitter.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.review {
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 18px;
+    color: #4F4F4F;
 }
