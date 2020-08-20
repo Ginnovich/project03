@@ -63,14 +63,11 @@ body {
     
 }
 
-/***** разобраться с падингами и марджингами *******/
-
 
 /**** header ****/ 
 
 
 header {
-    height: 525px;
     background: #F4F6F9;
 }
 
@@ -105,7 +102,7 @@ h1 {
     margin: auto;
 }
 
-h6 {
+p {
     font-family: 'Lato';
     font-size: 16px;
     line-height: 23px;
@@ -119,10 +116,9 @@ h6 {
 }
 
 .download {
-    padding-top: 50px;
+    padding: 50px;
     display: flex;
     justify-content: space-between;
-    width: 323px;
     margin: auto;
 }
 
@@ -134,11 +130,10 @@ h6 {
 
 
 #experience {
-    height: 863px;
     padding-top: 18px;
 }
 
-.blue {
+.topic {
     font-family: 'Lato bold';
     font-size: 16px;
     line-height: 21px;
@@ -156,7 +151,7 @@ h2 {
     padding-top: 27px;
 }
 
-.blue-a {
+.topic-a {
     font-family: 'Lato bold';
     font-size: 16px;
     line-height: 21px;
@@ -196,15 +191,26 @@ a {
 
 
 #start {
-    height: 1024px;
+    margin-top: 25px;
 }
 
-#start h6 {
+#start p {
     padding-top: 28px;
 }
 
-#start .blue-a {
+#start .p2 {
+    padding-top: 20px;
+}
+
+#start .topic-a {
     padding-top: 24px;
+    padding-bottom: 0;
+}
+
+#start img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 
@@ -214,12 +220,11 @@ a {
 
 
 #features {
-    height: 1775px;
     background: #FAFAFA;
-    margin-top: -11px;
 }
 
 #features h2 {
+    padding-top: 52px;
     padding-left: 21px;
     padding-right: 21px;
 }
@@ -242,6 +247,10 @@ a {
     margin-right: auto;
     margin-bottom: -10px;
     background-repeat: no-repeat;
+}
+
+.descriptions:last-child {
+    padding-bottom: 70px;
 }
 
 .video {
@@ -287,44 +296,41 @@ a {
 
 
 #twits {
-    height: 402px;
-    padding-top: 9px;
+    padding-top: 18px;
 }
 
 .commentary {
-    height: 161px;
+    height: 159px;
     border: 1px solid #828282;
     box-sizing: border-box;
     border-radius: 4px;
-    margin: 38px 34px;
+    margin: 41px 50px 35px 52px;
     padding: 15px 13px 15px 17px;
 }
 
 .name {
     height: 30px;
     display: flex;
+    justify-content: space-between;
 }
 
-.Users {
-    background-image: url(../img/users.png);
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-    height: 30px;
+.bio {
+    display: flex;
 }
 
-.Users > div {
+.bio > div {
     font-family: 'Lato bold';
     font-size: 16px;
     line-height: 19px;
-    margin-left: auto;
-    width: 105px;
-    padding-top: 6px;
+    margin: auto;
+    padding-left: 11px;
 }
 
 .twitter {
     background-image: url(../img/twitter.svg);
     background-repeat: no-repeat;
-    width: 100%;
+    width: 15px;
+    margin-top: 9px;
 }
 
 .review {
@@ -332,4 +338,121 @@ a {
     font-size: 14px;
     line-height: 18px;
     color: #4F4F4F;
+    padding-top: 19px;
+}
+
+
+
+/**** twits > .circles ****/
+
+
+
+.circles {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 71px;
+}
+
+.circles > div {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #828282;
+    margin-left: 11px;
+}
+
+
+
+/**** sponsors ****/
+
+
+
+#sponsors {
+    background: #FAFAFA;
+    padding-top: 24px;
+    padding-bottom: 16px;
+}
+
+#sponsors h2 {
+    padding-top: 32px;
+}
+
+#sponsors div {
+    padding: 27px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#sponsors img {
+    padding: 16px 20px;
+    margin: auto;
+}
+
+
+
+/**** team ****/
+
+
+
+#team h2{
+    padding: 27px 22px 0;
+}
+
+#team p {
+    padding-top: 16px;
+    line-height: 25px;
+}
+
+#team .download {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+#team img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+
+/**** footer ****/
+
+
+
+footer {
+    background: #00ADEE;
+    height: 210px;
+    display: flow-root;
+}
+
+footer .logo {
+    margin: 12px 46px;
+    color: white;
+    background-image: url(../img/football_white.svg);
+}
+
+.social > img:first-child {
+    padding-left: 31px;
+}
+
+.social > img {
+    margin-left: 14px;
+}
+
+footer > div:last-child {
+    margin: 28px 44px;
+}
+
+footer a{
+    font-family: 'Lato bold';
+    font-size: 16px;
+    line-height: 21px;
+    color: white;
+    padding-right: 15px;
+}
+
+footer a:last-child {
+    padding-right: 0;
 }
