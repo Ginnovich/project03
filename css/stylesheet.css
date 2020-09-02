@@ -91,15 +91,11 @@ h1 {
     font-family: 'Lato bold';
     font-size: 30px;
     line-height: 40px;
-    display: flex;
-    align-items: flex-end;
     text-align: center;
     letter-spacing: 0.03em;
     color: #333333;
     padding-top: 86px;
     padding-bottom: 8px;
-    width: 320px;
-    margin: auto;
 }
 
 p {
@@ -108,18 +104,21 @@ p {
     line-height: 23px;
     text-align: center;
     color: #4F4F4F;
-    width: 320px;
-    padding-top: 20px;
-    padding-bottom: 5px;
+    padding: 20px 7% 5px 7%;
     margin: auto;
     letter-spacing: 0.005em;
 }
 
 .download {
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: auto;
+}
+
+.download > a > img {
+    width: 100%;
 }
 
 
@@ -140,6 +139,7 @@ p {
     text-align: center;
     color: #00ADEE;
     padding-top: 36px;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -162,6 +162,8 @@ h2 {
 a {
     text-decoration: none;
     color: #00ADEE;
+    padding-right: 15PX;
+    padding-left: 10px;
 }
 
 .match {
@@ -208,9 +210,7 @@ a {
 }
 
 #start img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+width: 100%;
 }
 
 
@@ -225,8 +225,6 @@ a {
 
 #features h2 {
     padding-top: 52px;
-    padding-left: 21px;
-    padding-right: 21px;
 }
 
 .descriptions {
@@ -378,7 +376,7 @@ a {
 }
 
 #sponsors div {
-    padding: 27px 20px;
+    padding: 27px 10px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -410,9 +408,7 @@ a {
 }
 
 #team img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+
 }
 
 
@@ -428,13 +424,17 @@ footer {
 }
 
 footer .logo {
-    margin: 12px 46px;
+    margin: 0 29px;
     color: white;
     background-image: url(../img/football_white.svg);
 }
 
+.social {
+    padding-top: 12px;
+}
+
 .social > img:first-child {
-    padding-left: 31px;
+    padding-left: 15px;
 }
 
 .social > img {
@@ -442,7 +442,7 @@ footer .logo {
 }
 
 footer > div:last-child {
-    margin: 28px 44px;
+    margin: 28px 16px;
 }
 
 footer a{
@@ -450,7 +450,7 @@ footer a{
     font-size: 16px;
     line-height: 21px;
     color: white;
-    padding-right: 15px;
+    padding-right: 5px;
 }
 
 footer a:last-child {
