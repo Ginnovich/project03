@@ -72,16 +72,6 @@ header {
 
 }
 
-@media screen and (min-width: 768px) {
-    header {
-        background-image: url(../img/phones.png);
-        background-position-x: right;
-        background-repeat: no-repeat;
-        background-size: 66%;
-        height: 668px;
-    }
-}
-
 .logo {
     background-image: url(../img/football.svg);
     background-repeat: no-repeat;
@@ -98,14 +88,6 @@ header {
     text-align: end;
 }
 
-@media screen and (min-width: 768px) {
-    .logo {
-        background-position: 0px 60px;
-        margin-left: 11%;
-        padding-top: 60px;
-    }
-}
-
 h1 {
     font-family: 'Lato bold';
     font-size: 30px;
@@ -115,17 +97,6 @@ h1 {
     color: #333333;
     padding-top: 86px;
     padding-bottom: 8px;
-}
-
-@media screen and (min-width: 768px) {
-    h1 {
-        text-align: left;
-        font-size: 36px;
-        line-height: 48px;
-        padding-top: 134px;
-        margin-left: 11%;
-        width: 600px;
-    }
 }
 
 p {
@@ -139,29 +110,12 @@ p {
     letter-spacing: 0.005em;
 }
 
-@media screen and (min-width: 768px) {
-    p {
-        margin-left: 4%;
-        width: 450px;
-        font-size: 18px;
-        line-height: 26px;
-        text-align: left;
-    }
-}
-
 .download {
     padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
     justify-content: center;
     margin: auto;
-}
-
-@media screen and (min-width: 768px) {
-    .download {
-        justify-content: left;
-        margin-left: 11%;
-    }
 }
 
 a {
@@ -171,18 +125,52 @@ a {
     padding-left: 10px;
 }
 
-@media screen and (min-width: 768px) {
-    a {
-        padding-right: 43PX;
-        padding-left: 0;
-    }
-}
-
 .download > a > img {
     width: 100%;
 }
 
 @media screen and (min-width: 768px) {
+    header {
+        background-image: url(../img/phones.png);
+        background-position-x: right;
+        background-repeat: no-repeat;
+        background-size: 66%;
+        height: 668px;
+    }
+
+    .logo {
+        background-position: 0px 60px;
+        margin-left: 11%;
+        padding-top: 60px;
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 36px;
+        line-height: 48px;
+        padding-top: 134px;
+        margin-left: 11%;
+        width: 600px;
+    }
+
+    p {
+        margin-left: 4%;
+        width: 450px;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: left;
+    }
+
+    .download {
+        justify-content: left;
+        margin-left: 11%;
+    }
+
+    a {
+        padding-right: 43PX;
+        padding-left: 0;
+    }
+
     .download > a > img {
         width: 107%;
     }
@@ -227,7 +215,8 @@ h2 {
 }
 
 .match {
-    height: 360px;
+    position: relative;
+    height: 537px;
     background: url(../img/match.png), linear-gradient(180deg, white
      5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5);
     background-repeat: no-repeat;
@@ -237,14 +226,58 @@ h2 {
     overflow: hidden;
 }
 
-.match img:last-child {
-    margin-top: -73px;
+.video_game {
+    position: absolute;
+    width: 50%;
+    top: 278px;
+    left: 268px;
     float: right;
-    margin-right: 25px;
+    min-width: 283px;
 }
 
-.match img:first-child {
-    padding-top: 23px;
+.notifications {
+    position: absolute;
+    top: 62px;
+    left: 91px;
+    z-index: 0;
+    width: 64%;
+    min-width: 251px;
+}
+
+@media screen and (min-width: 768px) {
+    .details {
+        float: right;
+        width: 50%;
+        padding-top: 75px;
+    }
+
+    .topic {
+        padding-top: 36px;
+        text-align: left;
+        margin-left: 11%;
+    }
+
+    h2 {
+        margin-left: 11%;
+        text-align: left;
+    }
+
+    .topic-a {
+        margin-left: 11%;
+        text-align: left;
+        padding-top: 7px;
+    }
+
+    .notifications {
+        top: 58px;
+        left: -20px;
+        z-index: 1;
+    }
+
+    .video_game {
+        top: 202px;
+        left: 99px;
+    }
 }
 
 
