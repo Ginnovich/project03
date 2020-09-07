@@ -216,32 +216,33 @@ h2 {
 
 .match {
     position: relative;
-    height: 537px;
+    height: 360px;
     background: url(../img/match.png), linear-gradient(180deg, white
      5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5);
     background-repeat: no-repeat;
     background-blend-mode: color;
-    background-size: cover;
+    background-size: 535px;
+    background-position-x: -80px;
     padding-top: 35px;
     overflow: hidden;
 }
 
 .video_game {
     position: absolute;
-    width: 50%;
-    top: 278px;
-    left: 268px;
+    width: 67%;
     float: right;
-    min-width: 283px;
+    top: 202px;
+    left: 99px;
 }
 
 .notifications {
     position: absolute;
-    top: 62px;
-    left: 91px;
-    z-index: 0;
+    top: 58px;
+    left: -20px;
+    z-index: 1;
     width: 64%;
     min-width: 251px;
+    width: 84%;
 }
 
 @media screen and (min-width: 768px) {
@@ -262,21 +263,37 @@ h2 {
         text-align: left;
     }
 
+    #experience > .details > p {
+        width: 410px;
+        font-size: 16px;
+        padding-top: 29px;
+        line-height: 21px;
+    }
+
     .topic-a {
         margin-left: 11%;
         text-align: left;
-        padding-top: 7px;
+        padding-top: 23px;
+    }
+
+    .match {
+        height: 537px;
+        background-size: cover;
+        background-position-x: 0;
     }
 
     .notifications {
-        top: 58px;
-        left: -20px;
-        z-index: 1;
+        top: 62px;
+        left: 91px;
+        z-index: 0;
+        max-width: 460px;
     }
 
     .video_game {
-        top: 202px;
-        left: 99px;
+        top: 278px;
+        left: 268px;
+        min-width: 283px;
+        max-width: 360px;
     }
 }
 
@@ -304,7 +321,32 @@ h2 {
 }
 
 #start img {
-width: 100%;
+    width: 100%;
+    position: relative;
+}
+
+@media screen and (min-width: 768px) {
+    #start {
+        margin: 0;
+    }
+
+    #start > .details {
+        float: left;
+        position: absolute;
+        z-index: 1;
+        margin-top: 106px;
+        width: 100%;
+    }
+
+    #start > .details > p {
+        width: 480px;
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    #start > .details > .topic-a {
+        padding-top: 50px;
+    }
 }
 
 
@@ -321,16 +363,16 @@ width: 100%;
     padding-top: 52px;
 }
 
-.descriptions {
-    padding-top: 50px;
-}
-
-
-/**** features > div ****/
 
 
 /*** несоответсвия отступов 
 в макете приведены к общим значениям ***/
+
+
+
+.descriptions {
+    padding-top: 50px;
+}
 
 .descriptions > div {
     width: 40px;
@@ -379,6 +421,57 @@ width: 100%;
 
 .status {
     background-image: url(../img/features_div/status.svg);
+}
+
+@media screen and (min-width: 768px) {
+    #features {
+        height: 736px;
+    }
+
+    #features > h2 {
+        margin: 0;
+        text-align: center;
+        padding-top: 72px;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    li {
+        list-style: disc;
+        margin: 0 3% -70px;
+        text-indent: 1em;
+    }
+
+    .descriptions {
+        padding-top: 55px;
+    }
+
+    .descriptions:last-child {
+        padding-bottom: 0;
+    }
+
+    .descriptions > div {
+        margin: 0;
+    }
+
+    .descriptions > p {
+        width: 311px;
+        height: 144px;
+        font-size: 16px;
+        line-height: 23px;
+        margin: 0;
+        padding: 11px 0;
+        display: flex;
+        left: -5px;
+        position: relative;
+    }
+
+
+
 }
 
 
