@@ -484,6 +484,17 @@ h2 {
     padding-top: 18px;
 }
 
+.widget {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    position: relative;
+}
+
+.widget::-webkit-scrollbar {
+    display: none;
+}
+
 .commentary {
     height: 159px;
     border: 1px solid #828282;
@@ -526,12 +537,6 @@ h2 {
     padding-top: 19px;
 }
 
-
-
-/**** twits > .circles ****/
-
-
-
 .circles {
     display: flex;
     justify-content: center;
@@ -544,6 +549,40 @@ h2 {
     border-radius: 50%;
     background-color: #828282;
     margin-left: 11px;
+}
+
+@media screen and (min-width: 768px) {
+    #twits > h2 {
+        padding: 45px 0 25px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .commentary {
+        margin: 41px 15px 48px;
+        padding: 15px;
+        min-width: 309px;
+        line-height: 309px;
+    }
+
+    .widget::after { 
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0px;
+        bottom: 0;
+        right: -125px;
+        z-index: 2;
+        background: linear-gradient(to right, rgba(255,255,255,1) 5%,rgba(255,255,255,0) 50%,rgba(255,255,255,1) 95%);
+        border-radius: 4px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .circles {
+        padding-bottom: 44px;
+    }
 }
 
 
@@ -575,6 +614,24 @@ h2 {
 }
 
 
+@media screen and (min-width: 768px){
+    #sponsors {
+        padding-bottom: 7px;
+    }
+
+    #sponsors h2 {
+        margin: 0;
+        text-align: center;
+    }
+
+    #sponsors div {
+        max-width: 1161px;
+        margin: auto;
+        padding: 45px 10px;
+    }
+} 
+
+
 
 /**** team ****/
 
@@ -594,8 +651,42 @@ h2 {
     padding-bottom: 35px;
 }
 
-#team img {
+#team > img {
+    width: 100%;
+}
 
+
+@media screen and (min-width: 768px) {
+    #team {
+        display: flex;
+        flex-flow: row-reverse;
+        height: 483px;
+    }
+
+    #team > div:first-child {
+        width: 54%;
+        padding-top: 103px;
+    }
+
+    #team > div > h2 {
+        padding: 0;
+    }
+
+    #team > div > p {
+        font-size: 16px;
+        line-height: 25px;
+        width: 535px;
+        padding-top: 34px;
+    }
+
+    #team > div > .download {
+        padding-top: 38px;
+        margin-left: 10%;
+    }
+
+    #team > img:last-child {
+        width: 46%;
+    }
 }
 
 
