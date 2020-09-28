@@ -138,7 +138,7 @@ a {
         height: 668px;
     }
 
-    .logo {
+    header .logo {
         background-position: 0px 60px;
         margin-left: 11%;
         padding-top: 60px;
@@ -305,6 +305,7 @@ h2 {
 
 #start {
     margin-top: 25px;
+    overflow: hidden;
 }
 
 #start p {
@@ -320,9 +321,12 @@ h2 {
     padding-bottom: 0;
 }
 
-#start img {
-    width: 100%;
+#start .app {
     position: relative;
+    width: auto;
+    height: 565px;
+    margin: 0 0 0 -625px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -346,6 +350,11 @@ h2 {
 
     #start > .details > .topic-a {
         padding-top: 50px;
+    }
+
+    #start > .app {
+        width: 100%;
+        margin: 0;
     }
 }
 
@@ -502,6 +511,7 @@ h2 {
     border-radius: 4px;
     margin: 41px 50px 35px 52px;
     padding: 15px 13px 15px 17px;
+    min-width: 309px;
 }
 
 .name {
@@ -561,7 +571,6 @@ h2 {
     .commentary {
         margin: 41px 15px 48px;
         padding: 15px;
-        min-width: 309px;
         line-height: 309px;
     }
 
@@ -733,4 +742,34 @@ footer a{
 
 footer a:last-child {
     padding-right: 0;
+}
+
+
+@media screen and (min-width: 768px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: wrap;
+        height: 75px;
+        padding: 52px 11% 0;
+    }
+
+    footer .logo {
+        margin: 0;
+        background-position: 0 0;
+        padding: 0;
+    }
+
+    .social {
+        order: 2;
+        padding: 0;
+    }
+
+    footer > div:last-child {
+        margin: 0;
+    }
+
+    footer > div > a {
+        padding-right: 31px;
+    }
 }
