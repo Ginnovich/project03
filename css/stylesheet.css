@@ -321,11 +321,16 @@ h2 {
     padding-bottom: 0;
 }
 
+#start > .imgapp {
+    display: flex;
+    justify-content: center;
+}
+
 #start .app {
     position: relative;
     width: auto;
     height: 565px;
-    margin: 0 0 0 -625px;
+    margin: 0 0 0 -502px;
   }
 
 @media screen and (min-width: 768px) {
@@ -351,10 +356,10 @@ h2 {
         padding-top: 50px;
     }
 
-    #start > .app {
-        width: 100%;
+    #start > .imgapp > .app {
         height: 716px;
         margin: 0;
+        float: right;
     }
 }
 
