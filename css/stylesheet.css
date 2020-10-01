@@ -440,12 +440,14 @@ h2 {
 @media screen and (min-width: 768px) {
     #features {
         height: 736px;
+        background: url(../img/blue_back.png);
     }
 
     #features > h2 {
         margin: 0;
         text-align: center;
         padding-top: 72px;
+        color: white;
     }
 
     ul {
@@ -456,6 +458,7 @@ h2 {
 
     li {
         list-style: disc;
+        color: white;
         margin: 0 3% -70px;
         text-indent: 1em;
     }
@@ -482,9 +485,44 @@ h2 {
         display: flex;
         left: -5px;
         position: relative;
+        color: white;
     }
 
+    .video{
+        background: url(../img/features_div_white/baseline-ondemand_video-24px.svg);
+    }
 
+    .Notifications{
+        background: url(../img/features_div_white/baseline-notifications_active-24px.svg);
+    }
+
+    .HD{
+        background: url(../img/features_div_white/baseline-hd-24px.svg);
+    }
+
+    .flag{
+        background: url(../img/features_div_white/baseline-flag-24px.svg);
+    }
+
+    .style{
+        background: url(../img/features_div_white/baseline-style-24px.svg);
+    }
+
+    .poll{
+        background: url(../img/features_div_white/baseline-poll-24px.svg);
+    }
+
+    .Vidiprinter{
+        background: url(../img/features_div_white/baseline-add_to_home_screen-24px.svg);
+    }
+
+    .people{
+        background: url(../img/features_div_white/baseline-people-24px.svg);
+    }
+
+    .status{
+        background: url(../img/features_div_white/baseline-tune-24px.svg);
+    }
 
 }
 
