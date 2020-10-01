@@ -371,10 +371,11 @@ h2 {
 
 #features {
     background: #FAFAFA;
+    height: 1807px;
 }
 
 #features h2 {
-    padding-top: 52px;
+    padding-top: 70px;
 }
 
 
@@ -395,10 +396,6 @@ h2 {
     margin-right: auto;
     margin-bottom: -10px;
     background-repeat: no-repeat;
-}
-
-.descriptions:last-child {
-    padding-bottom: 70px;
 }
 
 .video {
@@ -465,10 +462,6 @@ h2 {
 
     .descriptions {
         padding-top: 55px;
-    }
-
-    .descriptions:last-child {
-        padding-bottom: 0;
     }
 
     .descriptions > div {
@@ -689,8 +682,12 @@ h2 {
 
 
 
+#team {
+    height: 692px;
+}
+
 #team h2{
-    padding: 27px 22px 0;
+    padding: 15px 22px 0;
 }
 
 #team p {
@@ -754,17 +751,13 @@ footer {
 }
 
 footer .logo {
-    margin: 0 29px;
+    margin: 10px 20px;
     color: white;
     background-image: url(../img/football_white.svg);
 }
 
-.social {
-    padding-top: 12px;
-}
-
 .social > img:first-child {
-    padding-left: 15px;
+    padding-left: 7px;
 }
 
 .social > img {
@@ -772,7 +765,7 @@ footer .logo {
 }
 
 footer > div:last-child {
-    margin: 28px 16px;
+    margin: 31px 9px;
 }
 
 footer a{
