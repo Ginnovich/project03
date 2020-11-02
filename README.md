@@ -1,2 +1,2 @@
-https://reginautsika.github.io/Project03/
+https://reginautsika.github.io/project03/
 Desktop version & mobile
